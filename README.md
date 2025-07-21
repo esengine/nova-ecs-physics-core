@@ -5,7 +5,6 @@ Core physics engine abstraction layer for NovaECS - provides a pluggable, type-s
 NovaECS的核心物理引擎抽象层 - 提供可插拔、类型安全的物理引擎架构，具备完善的事件处理和调试功能。
 
 [![npm version](https://badge.fury.io/js/%40esengine%2Fnova-ecs-physics-core.svg)](https://badge.fury.io/js/%40esengine%2Fnova-ecs-physics-core)
-[![CI](https://github.com/esengine/nova-ecs-physics-core/workflows/CI/badge.svg)](https://github.com/esengine/nova-ecs-physics-core/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5.4-blue.svg)](https://www.typescriptlang.org/)
 
@@ -40,6 +39,12 @@ NovaECS的核心物理引擎抽象层 - 提供可插拔、类型安全的物理�
 ```bash
 npm install @esengine/nova-ecs-physics-core
 ```
+
+## API Documentation | API 文档
+
+For complete API documentation, visit: [https://esengine.github.io/nove-ecs-physics-core/](https://esengine.github.io/nove-ecs-physics-core/)
+完整的API文档请访问：[https://esengine.github.io/nove-ecs-physics-core/](https://esengine.github.io/nove-ecs-physics-core/)
+
 
 ## 🚀 Quick Start | 快速开始
 
