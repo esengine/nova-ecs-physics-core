@@ -1,6 +1,6 @@
 {
   "name": "@esengine/nova-ecs-physics-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Core physics engine abstraction layer for NovaECS - provides pluggable physics engine architecture",
   "keywords": [
     "ecs",
