@@ -42,8 +42,9 @@ npm install @esengine/nova-ecs-physics-core
 
 ## API Documentation | API 文档
 
-For complete API documentation, visit: [https://esengine.github.io/nove-ecs-physics-core/](https://esengine.github.io/nove-ecs-physics-core/)
-完整的API文档请访问：[https://esengine.github.io/nove-ecs-physics-core/](https://esengine.github.io/nove-ecs-physics-core/)
+For complete API documentation, visit: [https://esengine.github.io/nove-ecs-physics-core/](https://esengine.github.io/nova-ecs-physics-core/)
+
+完整的API文档请访问：[https://esengine.github.io/nove-ecs-physics-core/](https://esengine.github.io/nova-ecs-physics-core/)
 
 
 ## 🚀 Quick Start | 快速开始
