@@ -37,6 +37,25 @@ export {
   BaseJointConfig
 } from './types/PhysicsTypes';
 
+// Extended joint types
+export {
+  DistanceJointConfig,
+  RevoluteJointConfig,
+  PrismaticJointConfig,
+  WeldJointConfig,
+  RopeJointConfig,
+  MouseJointConfig,
+  PulleyJointConfig,
+  GearJointConfig,
+  MotorJointConfig,
+  WheelJointConfig,
+  JointConfig,
+  JointLimits,
+  JointMotor,
+  JointBreakSettings,
+  ExtendedJointConfig
+} from './types/JointTypes';
+
 // Components
 export {
   RigidBodyComponent,
@@ -59,6 +78,46 @@ export {
   BasePhysicsPlugin,
   PhysicsPluginConfig
 } from './plugins/BasePhysicsPlugin';
+
+// Events
+export {
+  PhysicsEvent,
+  CollisionBeginEvent,
+  CollisionEndEvent,
+  SensorBeginEvent,
+  SensorEndEvent,
+  PreSolveEvent,
+  PostSolveEvent,
+  BodySleepEvent,
+  BodyWakeEvent,
+  JointBreakEvent,
+  PhysicsStepBeginEvent,
+  PhysicsStepEndEvent,
+  RaycastHitEvent
+} from './events/PhysicsEvents';
+
+export {
+  IPhysicsEventManager
+} from './events/IPhysicsEventManager';
+
+// Debug
+export {
+  IPhysicsDebugRenderer,
+  PhysicsDebugDrawConfig,
+  PhysicsDebugColors,
+  PhysicsDebugStats,
+  DEFAULT_DEBUG_CONFIG,
+  DEFAULT_DEBUG_COLORS
+} from './debug/IPhysicsDebugRenderer';
+
+export {
+  BasePhysicsDebugRenderer
+} from './debug/BasePhysicsDebugRenderer';
+
+// Utilities
+export {
+  PhysicsLogger
+} from './utils/Logger';
 
 // Re-export commonly used types from dependencies
 export type { Component, System, Entity, World, BasePlugin } from '@esengine/nova-ecs';

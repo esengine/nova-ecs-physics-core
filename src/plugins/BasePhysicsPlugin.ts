@@ -112,7 +112,7 @@ export abstract class BasePhysicsPlugin extends BasePlugin {
       
       this.log('Physics plugin installed successfully');
     } catch (error) {
-      this.logError('Failed to install physics plugin:', error);
+      this.error(`Failed to install physics plugin: ${String(error)}`);
       throw error;
     }
   }
@@ -121,7 +121,7 @@ export abstract class BasePhysicsPlugin extends BasePlugin {
    * Uninstall the physics plugin
    * 卸载物理插件
    */
-  async uninstall(world: World): Promise<void> {
+  uninstall(world: World): void {
     this.log('Uninstalling physics plugin...');
     
     try {
@@ -154,7 +154,7 @@ export abstract class BasePhysicsPlugin extends BasePlugin {
       
       this.log('Physics plugin uninstalled successfully');
     } catch (error) {
-      this.logError('Failed to uninstall physics plugin:', error);
+      this.error(`Failed to uninstall physics plugin: ${String(error)}`);
       throw error;
     }
   }
@@ -233,7 +233,7 @@ export abstract class BasePhysicsPlugin extends BasePlugin {
    * Update plugin (called every frame)
    * 更新插件（每帧调用）
    */
-  update(deltaTime: number): void {
+  update(_deltaTime: number): void {
     // Base implementation does nothing
     // Subclasses can override for custom behavior
     // 基础实现什么都不做
@@ -244,7 +244,7 @@ export abstract class BasePhysicsPlugin extends BasePlugin {
    * Validate plugin configuration
    * 验证插件配置
    */
-  validateConfig(config: Record<string, unknown>): boolean {
+  validateConfig(_config: Record<string, unknown>): boolean {
     // Basic validation - subclasses should override for specific validation
     // 基础验证 - 子类应该重写以进行特定验证
     return true;

@@ -203,12 +203,12 @@ export class JointComponent extends Component {
   public joint: IJoint | null = null;
   
   /** Joint configuration | 关节配置 */
-  public config: any; // Will be more specific in implementations
+  public config: unknown; // Will be more specific in implementations
   
   /** Whether the joint is active | 关节是否激活 */
   public active: boolean;
 
-  constructor(config: any, active: boolean = true) {
+  constructor(config: unknown, active: boolean = true) {
     super();
     this.config = config;
     this.active = active;
@@ -298,22 +298,22 @@ export class PhysicsTransformComponent extends Component {
  */
 export class CollisionEventComponent extends Component {
   /** Collision begin callbacks | 碰撞开始回调 */
-  public onCollisionBegin: Array<(other: any) => void> = [];
-  
+  public onCollisionBegin: Array<(other: unknown) => void> = [];
+
   /** Collision end callbacks | 碰撞结束回调 */
-  public onCollisionEnd: Array<(other: any) => void> = [];
-  
+  public onCollisionEnd: Array<(other: unknown) => void> = [];
+
   /** Sensor begin callbacks | 传感器开始回调 */
-  public onSensorBegin: Array<(other: any) => void> = [];
-  
+  public onSensorBegin: Array<(other: unknown) => void> = [];
+
   /** Sensor end callbacks | 传感器结束回调 */
-  public onSensorEnd: Array<(other: any) => void> = [];
+  public onSensorEnd: Array<(other: unknown) => void> = [];
 
   /**
    * Add collision begin callback
    * 添加碰撞开始回调
    */
-  addCollisionBeginCallback(callback: (other: any) => void): void {
+  addCollisionBeginCallback(callback: (other: unknown) => void): void {
     this.onCollisionBegin.push(callback);
   }
 
@@ -321,7 +321,7 @@ export class CollisionEventComponent extends Component {
    * Add collision end callback
    * 添加碰撞结束回调
    */
-  addCollisionEndCallback(callback: (other: any) => void): void {
+  addCollisionEndCallback(callback: (other: unknown) => void): void {
     this.onCollisionEnd.push(callback);
   }
 
@@ -329,7 +329,7 @@ export class CollisionEventComponent extends Component {
    * Add sensor begin callback
    * 添加传感器开始回调
    */
-  addSensorBeginCallback(callback: (other: any) => void): void {
+  addSensorBeginCallback(callback: (other: unknown) => void): void {
     this.onSensorBegin.push(callback);
   }
 
@@ -337,7 +337,7 @@ export class CollisionEventComponent extends Component {
    * Add sensor end callback
    * 添加传感器结束回调
    */
-  addSensorEndCallback(callback: (other: any) => void): void {
+  addSensorEndCallback(callback: (other: unknown) => void): void {
     this.onSensorEnd.push(callback);
   }
 }

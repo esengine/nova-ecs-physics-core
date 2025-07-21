@@ -265,7 +265,15 @@ export enum JointType {
   /** Rope joint | 绳索关节 */
   Rope = 'rope',
   /** Mouse joint | 鼠标关节 */
-  Mouse = 'mouse'
+  Mouse = 'mouse',
+  /** Pulley joint | 滑轮关节 */
+  Pulley = 'pulley',
+  /** Gear joint | 齿轮关节 */
+  Gear = 'gear',
+  /** Motor joint | 电机关节 */
+  Motor = 'motor',
+  /** Wheel joint | 车轮关节 */
+  Wheel = 'wheel'
 }
 
 /**

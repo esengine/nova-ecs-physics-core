@@ -1,5 +1,5 @@
 import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
+import { dts } from 'rollup-plugin-dts';
 
 const external = ['@esengine/nova-ecs', '@esengine/nova-ecs-math'];
 
